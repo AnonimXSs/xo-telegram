@@ -46,6 +46,7 @@ class handler(BaseHTTPRequestHandler):
         self.wfile.write(b'')
         return
 
+    
 
 if __name__ == '__main__':
     httpd = HTTPServer(('', int(os.environ.get('PORT', 5000))), handler)
